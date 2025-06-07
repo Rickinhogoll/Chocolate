@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Site Simples</title>
+  <style>
+    /* Reset e estilo base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #007acc;
+      padding: 15px 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Espaço para navbar fixa */
+    .content {
+      padding-top: 80px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Seções */
+    section {
+      padding: 40px 20px;
+      margin-bottom: 40px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      color: #007acc;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    section p {
+      font-size: 1.1em;
+      text-align: center;
+    }
+    /* Imagem exemplo */
+    .img-example {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 100%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #007acc;
+      color: white;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <section id="home">
+      <h2>Bem-vindo ao meu site!</h2>
+      <p>Este é um site simples com navegação e várias seções.</p>
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fpt-br%2Fs%2Ffotografias%2Fpato&psig=AOvVaw2yhxkj7KBlny0_DSpbXwqz&ust=1749384855054000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDIqsik340DFQAAAAAdAAAAABAK" alt="PATO" class="img-example" />
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>Este site foi criado para mostrar um exemplo básico de navegação e layout usando HTML e CSS.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Quer falar comigo? Envie um email para <a href="mailto:exemplo@meusite.com">exemplo@meusite.com</a>.</p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Meu Site Simples
+  </footer>
+
+</body>
+</html>
